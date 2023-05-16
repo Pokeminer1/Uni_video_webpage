@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MMU Video</title>
+		<script src="Scripts/videoScript.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>Finn McFarlane, 19018175, 4/11/19</h1>
+		</header>
+
+		<section id="videoContainer">
+			<video width=640px height=360px poster="Images/poster.jpg">
+				<source src="Videos/mp4/mmu.mp4" type="video/mp4">
+				<source src="Videos/webm/MMU.webm" type="video/webm">
+			</video>
+
+			<div id="videoControls">
+				<time type="datetime" id="timeElapsed">00:00</time>
+				<input type="range" id="seekBar" min=0 max=100 step=1 value=0>
+				<time type="datetime" id="timeRemaining">00:00</time>
+				<button type="button" id="playPause">Play</button>
+				<button type="button" id="mute">Mute</button>
+				<input type="range" id="volumeBar" min="0" max="10" step="1" value="5">
+				<container id="volumeValue">5</container>
+				<select id="playbackSpeed">
+					<option value="0.25">0.25x</option>
+					<option value="0.5">0.5x</option>
+					<option value="0.75">0.75x</option>
+					<option selected="selected" value="1">1.0x</option>
+					<option value="1.5">1.5x</option>
+					<option value="2">2.0x</option>
+				</select>
+			</div>
+		</section>
+	</body>
+</html>
